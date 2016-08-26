@@ -1,0 +1,43 @@
+{
+  "name": "hubot-remind-k",
+  "version": "1.0.0",
+  "description": "Friendly reminder script for Hubot",
+  "main": "index.coffee",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chrono-node": "^1.0.6",
+    "node-uuid": "^1.4.2",
+    "moment": "^2.9.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "hubot": "*",
+    "mocha": "*",
+    "chai": "*",
+    "hubot-test-helper": "*"
+  },
+  "dependencies": {
+    "chrono-node": "^1.2.4",
+    "moment": "^2.14.1",
+    "node-uuid": "^1.4.7"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caolp90/hubot-remind-k.git"
+  },
+  "keywords": [
+    "hubot",
+    "reminder"
+  ],
+  "author": "Cao Le",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caolp90/hubot-remind-k/issues"
+  },
+  "homepage": "https://github.com/caolp90/hubot-remind-k#readme"
+}
