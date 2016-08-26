@@ -16,11 +16,11 @@ Hubot script to manage reminders in a relaxed friendly syntax.
 
 Install the npm package
 
-    npm install hubot-remind-her --save
+    npm install hubot-remind-k --save
 
 and add *hubot-remind-her* to `external-scripts.json`
 
-    [ "hubot-remind-her" ]
+    [ "hubot-remind-k" ]
 
 Note: This script will not work in conjuction with [remind.coffee][] and
 [hubot-remind-at][], so disable them if you are enabling this.
