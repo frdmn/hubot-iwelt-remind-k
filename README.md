@@ -1,4 +1,4 @@
-# Hubot Remind Her
+# Hubot Remind K
 
 Hubot script to manage reminders in a relaxed friendly syntax.
 
