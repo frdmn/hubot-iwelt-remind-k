@@ -1,5 +1,5 @@
 {
-  "name": "hubot-remind-k",
+  "name": "hubot-iwelt-remind-k",
   "version": "1.0.0",
   "description": "Friendly reminder script for Hubot",
   "main": "index.coffee",
