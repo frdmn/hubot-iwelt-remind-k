@@ -4,12 +4,11 @@
 # Commands:
 #   hubot remind me tomorrow to document this better
 #   hubot remind us in 15 minutes to end this meeting
-#   hubot remind at 5 PM to go home
+#   hubot remind me every in 30 minutes to take a walk
+#   hubot [delete|remove|stop] remind[er] [NUMBER]
 #   hubot (list|show|all) remind[ers]
 #   hubot remind[ers] (list|show|all)
-#   hubot [delete|remove|stop] remind[er] [NUMBER]
 #   hubot remind[er] (delete|remove|stop) [NUMBER]
-#   hubot remind in every 30 minutes to take a walk
 #   hubot remind[er] repeat [NUMBER]
 #   hubot repeat remind[er] [NUMBER]
 #
@@ -130,7 +129,7 @@ class Reminders
     who = msg.match[1]
     prefix = msg.match[3]
     action = msg.match[4]
-    
+
     chrono_result = chrono_parse text
     if not chrono_result and text.indexOf('every')
       text = text.replace 'in every', 'every in'
@@ -146,10 +145,10 @@ class Reminders
 
     @robot.logger.debug date
     @robot.logger.debug "repeat: #{repeat}, action: #{action}"
-    
+
     if who != 'us'
-      action = prefix + ' ' + action    
-     
+      action = prefix + ' ' + action
+
     reminder = new ReminderAt msg.envelope, date, action, repeat, text, who
     if reminder.diff() <= 0
       msg.send "#{date} is past. can't remind you"
